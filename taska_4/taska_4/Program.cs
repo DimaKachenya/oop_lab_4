@@ -113,9 +113,9 @@ namespace taska_4
 
         InformationOf timeOfInf = new InformationOf();
         List<Square> MySquares = new List<Square>();
+
         public Collection()
         {
-
             DateTime now = DateTime.Now;
             timeOfInf.TimeOfCreat = $"Dima: {now.ToString("F")}";
         }
@@ -243,10 +243,7 @@ namespace taska_4
                     case 6:
                         myCollection.ShowNumber();
                         break;
-
-
                     case 666:
-                        break;
                         break;
 
                 }
