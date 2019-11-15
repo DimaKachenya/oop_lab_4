@@ -100,24 +100,24 @@ namespace taska_4
 
     public class Collection
     {
-        public class InformationOf
+        public class Information
         {
-            public InformationOf() { }
-            private string timeOfCreat;
-            public string TimeOfCreat
+            public Information() { }
+            private string timeOfCreation;
+            public string TimeOfCreation
             {
-                get { return timeOfCreat; }
-                set { timeOfCreat = value; }
+                get { return timeOfCreation; }
+                set { timeOfCreation = value; }
             }
         }
 
-        InformationOf timeOfInf = new InformationOf();
+        Information timeOfInf = new Information();
         List<Square> MySquares = new List<Square>();
 
         public Collection()
         {
             DateTime now = DateTime.Now;
-            timeOfInf.TimeOfCreat = $"Dima: {now.ToString("F")}";
+            timeOfInf.TimeOfCreation = $"Dima: {now.ToString("F")}";
         }
 
         public void Add(Square Figure)
@@ -147,7 +147,7 @@ namespace taska_4
 
         public void ShowInf()
         {
-            Console.WriteLine($"{timeOfInf.TimeOfCreat}\n");
+            Console.WriteLine($"{timeOfInf.TimeOfCreation}\n");
             for (int i = 0; i < MySquares.Count; i++)
             {
                 Console.WriteLine($"{MySquares[i].ToString()}");
@@ -156,7 +156,6 @@ namespace taska_4
 
         public void FindInf(int i)
         {
-
             if (i >= 0 && i <= MySquares.Count)
             {
                 Console.WriteLine($"{MySquares[i - 1].ToString()}");
