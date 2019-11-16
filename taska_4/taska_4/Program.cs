@@ -116,8 +116,7 @@ namespace taska_4
 
         public Collection()
         {
-            DateTime now = DateTime.Now;
-            timeOfInf.TimeOfCreation = $"Dima: {now.ToString("F")}";
+            timeOfInf.TimeOfCreation = $"Dima: {DateTime.Now.ToString("F")}";
         }
 
         public void Add(Square Figure)
@@ -139,10 +138,8 @@ namespace taska_4
 
         public void DeleteAll()
         {
-            for (int i = MySquares.Count - 1; i <= 0; i--)
-            {
-                MySquares.RemoveAt(i);
-            }
+            MySquares.Clear();
+            
         }
 
         public void ShowInf()
